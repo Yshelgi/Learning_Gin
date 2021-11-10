@@ -37,7 +37,7 @@ func createPool(num int, jobchan <-chan *Job, resultchan chan<- *Result) {
 	}
 }
 
-func main() {
+func pool() {
 	jobchan := make(chan *Job, 2)
 	resultchan := make(chan *Result, 2)
 	createPool(1, jobchan, resultchan)

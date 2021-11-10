@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func demo3() {
 	ch1 := make(chan int)
 	ch2 := make(chan int)
 	go func() {

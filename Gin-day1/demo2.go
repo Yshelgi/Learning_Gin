@@ -7,7 +7,7 @@ func recv(c chan int) {
 	fmt.Println("接收：", ret)
 }
 
-func main() {
+func demo2() {
 	ch := make(chan int)
 	go recv(ch)
 	ch <- 10
